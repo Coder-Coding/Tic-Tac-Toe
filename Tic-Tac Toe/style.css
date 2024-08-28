@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #16a085;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* .hide{
+    display: none;
+} 
+if we write this class here then this class will be overwritten by the new class*/
+.new{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*this make the flex items to come in one column and in 1 column the items can only go up and down but in row(right-left)*/
+}
+.para{
+    font-size: 8vmin;
+}
+.newgame{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.4rem;
+    background-color: #db345e;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 4px 4px 10px rgb(153, 134, 51);
+}
+.hide{
+    display: none;
+}
+.container{
+    height: 70vh; /*giving 70% of the visible screen height*/
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{/*we have to make it in the center of the container box-----*/
+    height: 60vmin;/*giving 60% of the smallest side of the view port*/
+    width: 60vmin;
+    display: flex;/*flex makae it easy to adjust elemnt according to the avaliable space*/
+    flex-wrap: wrap;/*adjust according to the space avaliable*/
+    justify-content: center;/*align flex items horizontally*/
+    align-items: center;/*align items vertically*/
+    gap: 1.5vmin;/*define the spacing between grid and flex items*/
+}
+.box{/*This box is alligned to the center of game box----*/
+    height: 18vmin;
+    width: 18vmin;
+    background-color: rgb(169, 169, 169);/*can create colour using colour combination*/
+    color: #ffcc01 ;/*colour of text*/
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    box-shadow: 0 0 1rem rgb(0, 0, 0,0.8);/*box shadow gives the shadow texture to the boxes*//*rgb is used to give the value to the opacity of the shadow*/
+}
+.reset{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.4rem;
+    background-color: #3498db;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 4px 4px 10px #349;
+}
